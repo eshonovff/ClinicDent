@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "Home": "Home",
+    "About": "About",
+    "Services": "Services",
+    "Register": "Register",
+    "Appointment": "Appointment"
+  },
+  "hero": {
+    "title": "We Provide High Quality Dental Services",
+    "description": "Appropriately embrace transparent materials via turnkey niche markets.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "service": {
+    "title": "How to get our service?",
+    "description": "Just follow these simple steps",
+    "call": "Call for appointment",
+    "getDate": "Get a Date & Serial",
+    "consult": "Consult Your Dentist"
+  },
+  "section": {
+    "title": "Always Laugh Whenever It's Possible",
+    "description": "We also offer treatments that improve the appearance of your smile, giving you the confidence boost you deserve. The process of our treatment is below.",
+    "whatWeProvide": "WHAT WE PROVIDE",
+    "services": [
+      "Check-ups",
+      "Emergencies",
+      "Cosmetic dentistry",
+      "Dental implants",
+      "Orthodontics",
+      "Children’s dentistry",
+      "Preventative checks",
+      "Telephone consultations"
+    ]
+  },
+
+  "keyFeatures": {
+    "title": "What Makes Us More Special",
+    "subtitle": "KEY FEATURE",
+    "features": [
+      {
+        "image": "/src/assets/01.png",
+        "title": "Laser Technology",
+        "description": "World's most advanced Diode Laser. Your treatment experience will be relaxing & smooth."
+      },
+      {
+        "image": "/src/assets/02.png",
+        "title": "Painless Injection",
+        "description": "Only dental clinic in New York, USA utilizing Painless Injection system. You will be amazed!"
+      },
+      {
+        "image": "/src/assets/03.png",
+        "title": "Dental Implant",
+        "description": "30+ years of experience in Dental Implant with specialist care. You will be able to chew properly again!"
+      },
+      {
+        "image": "/src/assets/04.png",
+        "title": "3D Dental Scanner",
+        "description": "One of the world's most advanced 3D Dental Scanner with auto scanning only one in New York!"
+      },
+      {
+        "image": "/src/assets/05.png",
+        "title": "Digital Smile Design",
+        "description": "We help to re-design your smile and shape your teeth to create a customised smile for your face!"
+      },
+      {
+        "image": "/src/assets/06.png",
+        "title": "Crown and Bridge",
+        "description": "Transform your blackish gum to pinkish color with painless, single appointment Laser Gum Treatment."
+      }
+    ]
+  },
+  "section1": {
+    "title": "Let Us Brighten Your Smile!",
+    "description": "Helping patients achieve good dental health & a beautiful smile is a privilege & responsibility. For over 30 years, we have proudly provided the best dental experience in New York. Our comfort-first approach is designed to meet the needs of you & your entire family.",
+    "button": "Make An Appointment"
+  },
+
+  "about": {
+    "whoWeAre": "WHO WE ARE",
+    "historyTitle": "Our Glorious History",
+    "sectionTitle": "Our history",
+    "description": "Dentics is a well-known name in dental and oral care in New York. The journey of this institution started in 1990 under the hands of Dr. Jonathon Doe, Gold Medalist of Harvard University. Dentics dental center has been leading the way in dental treatment in USA for more than 30 years in keeping with the evolution of time and the modernization of the era.",
+    "meetBrains": "Meet Some of Our Brains",
+    "meetDoctors": "MEET OUR DOCTORS",
+    "appointment": "Appointment",
+    "clientFeedback": "What our client says about us"
+  },
+  "appointment": {
+    "name": "Name",
+    "fullname": "Full name",
+    "phone": "Phone",
+    "phonePlaceholder": "+1 (555) 000-0000",
+    "date": "Date",
+    "doctor": "Doctor",
+    "doctor1": "Dr. Pritis Barua",
+    "doctor2": "Dr. John Doe",
+    "doctor3": "Dr. Jane Smith",
+    "message": "Message",
+    "messagePlaceholder": "Include a message...",
+    "privacyPolicy": "You agree to our friendly privacy policy.",
+    "confirm": "Confirm Appointment"
+  },
+  
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "placeholderName": "Enter your name",
+      "placeholderEmail": "Enter your email",
+      "subscribeButton": "Subscribe Now"
+    
+  }
+  
+}

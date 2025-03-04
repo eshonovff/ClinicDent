@@ -1,0 +1,25 @@
+.no-copy {
+    user-select: none; /* Манъ кардани интихоб кардани текст */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+}
+img{
+    pointer-events: none;
+}
+
+@import "tailwindcss";
+@theme {
+    --breakpoint-mb: 20rem;  /* 300px */
+    --breakpoint-ph: 28rem;     /* 400px */
+    --breakpoint-sx: 31.25rem;   /* 500px */
+    --breakpoint-l: 37.5rem;     /* 600px */
+    --breakpoint-xl: 43.75rem;   /* 700px */
+    --breakpoint-xxl: 50rem;     /* 800px */
+    --breakpoint-cs: 56.25rem;   /* 900px */
+    --breakpoint-cx: 62.5rem;    /* 1000px */
+    --breakpoint-ks: 68.75rem;    /* 1100px */
+    --breakpoint-fn: 75rem;      /* 1200px */
+    --breakpoint-sm: 81.25rem;   /* 1300px */
+    --breakpoint-md: 112.5rem;   /* 1800px */
+  }
+  
