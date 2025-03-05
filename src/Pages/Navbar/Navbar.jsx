@@ -5,8 +5,7 @@ import logo from "../../assets/Logo (1).png";
 import tajikistan from "../../assets/tajikistan.png";
 import russia from "../../assets/russia.png";
 import english from "../../assets/united-kingdom.png";
-import { ScrollProvider, useScroll } from "../../hooks/ScrollProvider";
-import { Home } from "@mui/icons-material";
+import { useScroll } from "../../hooks/ScrollProvider";
 const Navbar = () => {
   const [flag, setFlags] = useState(russia);
   const { t, i18n } = useTranslation();
@@ -110,7 +109,7 @@ const Navbar = () => {
 
           <Drawer open={open} onClose={toggleDrawer(false)}>
             <div className="p-5 w-[200px]">
-              <img src="/src/assets/Logo (1).png" alt="" />
+              <img src={logo} alt="" />
               <div className="flex py-2">
                 <img className="w-[30px]" src={flag} alt="" />
                 <select
@@ -131,7 +130,7 @@ const Navbar = () => {
             </div>
           </Drawer>
 
-          <img className="w-[120px]" src="/src/assets/Logo (1).png" alt="" />
+          <img className="w-[120px]" src={logo} alt="" />
         </div>
 
         <Button
