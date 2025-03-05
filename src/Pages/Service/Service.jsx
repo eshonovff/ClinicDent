@@ -1,12 +1,30 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@mui/material";
-
+import image2 from "../../assets/Image.png";
+import image01 from "../../assets/01.png"
+import image02 from "../../assets/02.png"
+import image03 from "../../assets/03.png"
+import image04 from "../../assets/04.png"
+import image05 from "../../assets/05.png"
+import image06 from "../../assets/06.png"
+import { useScroll } from "../../hooks/ScrollProvider";
 const ServiceSection = () => {
   const { t } = useTranslation();
+  const imageMap = {
+    "/src/assets/01.png": image01,
+    "/src/assets/02.png": image02,
+    "/src/assets/03.png": image03,
+    "/src/assets/04.png": image04,
+    "/src/assets/05.png": image05,
+    "/src/assets/06.png": image06,
+  };
+    const {
+      servicesRef,
+    } = useScroll();
 
   return (
-    <div className="">
-      <section className="bg-[#516EFF] text-center cs:py-20 pt-5 flex flex-col cs:flex-row cs:items-center px-2">
+    <div className="" ref={servicesRef}>
+      <section  className="bg-[#516EFF] text-center cs:py-20 pt-5 flex flex-col cs:flex-row cs:items-center px-2">
         <div className=" cs:w-[50%] text-white">
           <h1 className="font-bold cs:text-4xl text-2xl mb-5">{t("service.title")}</h1>
           <p className="font-light hidden ph:block pb-2  text-xl">{t("service.description")}</p>
@@ -68,7 +86,7 @@ const ServiceSection = () => {
           <h1 className="cx:text-5xl text-2xl font-bold pb-20 text-[#dfbd00] ">
             {t("section.title")}
           </h1>
-          <img src="/src/assets/Image.png" alt="Service" />
+          <img src={image2} alt="Service" />
         </div>
         <div className="w-[100%] px-2 cx:p-20">
           <div>
@@ -237,18 +255,22 @@ const ServiceSection = () => {
           {t("keyFeatures.subtitle")}
         </h1>
       </div>
-      <div className="cx:mt-32 grid grid-cols-2 sx:grid-cols-2 gap-1 cs:gap-5 cx:gap-10 cs:grid-cols-3 mt-10  justify-between">
-        {t("keyFeatures.features", { returnObjects: true }).map((feature, index) => (
-          <div
-            key={index}
-            className=" flex items-center flex-col  bg-gray-100 border xxl:p-3  p-1 cx:p-10  md:p-20 rounded-3xl justify-between border-gray-200"
-          >
-            <img className="w-[50px] h-[50px] cs:w-[100px] cs:h-[100px]" src={feature.image} alt="" />
-            <h1 className="text-md md:text-2xl text-center font-bold cx:py-5 py-2">{feature.title}</h1>
-            <p className="cx:text-md text-[10px]  xxl:text-lg text-center">{feature.description}</p>
-          </div>
-        ))}
-      </div>
+      <div className="cx:mt-32 grid grid-cols-2 sx:grid-cols-2 gap-1 cs:gap-5 cx:gap-10 cs:grid-cols-3 mt-10 justify-between">
+  {t("keyFeatures.features", { returnObjects: true }).map((feature, index) => (
+    <div
+      key={index}
+      className="flex items-center flex-col bg-gray-100 border xxl:p-3 p-1 cx:p-10 md:p-20 rounded-3xl justify-between border-gray-200"
+    >
+      <img
+        className="w-[50px] h-[50px] cs:w-[100px] cs:h-[100px]"
+        src={imageMap[feature.image] || feature.image} 
+        alt=""
+      />
+      <h1 className="text-md md:text-2xl text-center font-bold cx:py-5 py-2">{feature.title}</h1>
+      <p className="cx:text-md text-[10px] xxl:text-lg text-center">{feature.description}</p>
+    </div>
+  ))}
+</div>
     </section>
 
     <section className="bg-[#516EFF] my-10 p-2 cs:px-20 cs:py-10 text-white text-center">

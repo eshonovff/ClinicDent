@@ -7,8 +7,14 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination } from "swiper/modules";
 import { Button } from "@mui/material";
+import image1 from "../../assets/Image (1).png"
+import image2 from "../../assets/Image (2).png"
+import { useScroll } from "../../hooks/ScrollProvider";
 const About = () => {
   const { t } = useTranslation();
+  const {
+    aboutRef,
+  } = useScroll();
   const doctors = [
     {
       id: 1,
@@ -61,8 +67,8 @@ const About = () => {
     },
   ];
   return (
-    <div>
-      <section className="p-2 sx:p-10 cx:p-20 ">
+    <div ref={aboutRef}>
+      <section  className="p-2 sx:p-10 cx:p-20 ">
         <div className="flex justify-between items-center">
           <h1 className="text-[#dfbd00] sm:text-5xl cs:text-4xl sx:text-2xl text-xl font-bold w-[60%] text-start border-b-2 py-5">
             {t("about.whoWeAre")}
@@ -76,7 +82,7 @@ const About = () => {
           <div className="xxl:w-[50%]">
             <img
               className="w-[100%] xxl:w-[80%] cx:h-[100%]"
-              src="/src/assets/Image (1).png"
+              src={image1}
               alt="Our History"
             />
           </div>
@@ -143,8 +149,8 @@ const About = () => {
           </Swiper>
         </div>
       </section>
-      
-      <section className="bg-[#516EFF] hidden cx:block px-3 py-2">
+
+      <section  className="bg-[#516EFF] hidden cx:block px-3 py-2">
         <Swiper
           slidesPerView={1.2}
           spaceBetween={30}
@@ -157,7 +163,7 @@ const About = () => {
             <SwiperSlide key={doctor.id}>
               <div className="flex text-white p-5 rounded-2xl items-center">
                 <div className="w-[40%]">
-                  <img src="/src/assets/Image (2).png" alt="" />
+                  <img src={image2} alt="" />
                 </div>
                 <div className="w-[50%]">
                   <h1 className="text-3xl font-bold ">
@@ -192,6 +198,7 @@ const About = () => {
           ))}
         </Swiper>
       </section>
+
     </div>
   );
 };

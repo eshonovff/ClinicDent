@@ -1,7 +1,8 @@
 import { Button } from "@mui/material";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
+import image1 from "../../assets/Image (3).png"
+import { useScroll } from "../../hooks/ScrollProvider";
 
 
 const countryCodes = [
@@ -24,6 +25,9 @@ const countryCodes = [
 
 const APPOINMENT = () => {
  const {t}= useTranslation();
+    const {
+      AppointmentRef,
+       } = useScroll();
 
     const [formData, setFormData] = useState({
         name: "",
@@ -50,7 +54,7 @@ const APPOINMENT = () => {
 
 
   return (
-    <div>
+    <div ref={AppointmentRef}>
       <section className="p-2 cx:p-20">
         <div className="flex justify-between items-center">
           <h1 className="text-[#dfbd00] sm:text-5xl cs:text-4xl sx:text-2xl text-xl font-bold w-[60%] text-start border-b-2 py-5">
@@ -63,7 +67,7 @@ const APPOINMENT = () => {
 
         <div className="mt-26 flex flex-col cs:flex-row">
             <div className=" w-[100%] flex justify-center cx:w-[50%]">
-                <img className="w-[70%] h-[100%]" src="/src/assets/Image (3).png" alt="" />
+                <img className="w-[70%] h-[100%]" src={image1} alt="" />
             </div>
             <div className=" w-[100%] cs:w-[50%] flex items-center justify-center">
             <form
